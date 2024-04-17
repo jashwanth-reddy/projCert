@@ -4,4 +4,4 @@ ADD website /var/www/html
 
 RUN rm /var/www/html/index.html
 
-CMD apachetl -D FOREGROUND
+CMD ["apache2ctl", "-D","FOREGROUND"]
